@@ -1,41 +1,41 @@
 ### INSTALAR DOCKER NATIVO NO WSL2 ###
 
-> Atualização de pacotes do repositório Linux <
+> Atualização de pacotes do repositório Linux
 sudo apt update -y
 sudo apt upgrade -y
 
-> Instale alguns pacotes que deixam o apt usar pacotes pelo HTTPS <
+> Instale alguns pacotes que deixam o apt usar pacotes pelo HTTPS
 sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
 
-> Adicione a chave GPG para o repositório oficial do Docker <
+> Adicione a chave GPG para o repositório oficial do Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-> Adicione o repositório do Docker às fontes do APT <
+> Adicione o repositório do Docker às fontes do APT
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 
-> Atualize o banco de dados do pacote com os pacotes do Docker que recém adicionamos <
+> Atualize o banco de dados do pacote com os pacotes do Docker que recém adicionamos
 sudo apt update
 
-> Instale o Docker <
+> Instale o Docker
 sudo apt install docker-ce -y
 
-> Verificando se está tudo ok <
+> Verificando se está tudo ok
 sudo service docker start
 sudo service docker status
 
-> Iniciando o Docker automaticamente com o boot do WSL2 < 
+> Iniciando o Docker automaticamente com o boot do WSL2
 sudo touch /etc/wsl.conf
 echo -e "[boot] \n command = service docker start" >> /etc/wsl.conf
 
-> Reinicie o Docker - Powershell <
+> Reinicie o Docker - Powershell
 wsl --shutdown
 wsl -l -v
 
-> Verificando status e informações do Docker instalado <
+> Verificando status e informações do Docker instalado
 sudo service docker status
 docker version
 
-> Utilizando o Docker sem SUDO <
+> Utilizando o Docker sem SUDO
 sudo usermod -aG docker ${USER}
 su - ${USER}
 
