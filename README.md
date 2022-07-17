@@ -65,6 +65,6 @@ docker run --name=mariadb -e MYSQL_ROOT_PASSWORD=<SENHA ROOT> -e MYSQL_DATABASE=
 
 ### INSTALAR O DBEAVER E INSOMNIA
 (https://dbeaver.io/files/dbeaver-ce-latest-x86_64-setup.exe)
-&nbsp;
+
 (https://updates.insomnia.rest/downloads/windows/latest?app=com.insomnia.app&source=website)
 
