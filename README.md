@@ -1,6 +1,6 @@
 ### INSTALAR DOCKER NATIVO NO WSL2 ###
 
-> Atualização de pacotes do repositório Linux
+>> Atualização de pacotes do repositório Linux
 sudo apt update -y
 sudo apt upgrade -y
 
