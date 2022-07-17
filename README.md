@@ -1,5 +1,12 @@
 ### INSTALAR DOCKER NATIVO NO WSL2 ###
 
+Pré-requisitos
+```
+Windows 10 20H2+
+WSL2
+Ubuntu 20.04
+```
+
 Atualização de pacotes do repositório Linux
 ```
 sudo apt update -y
