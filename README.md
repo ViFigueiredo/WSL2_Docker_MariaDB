@@ -1,8 +1,10 @@
 ### INSTALAR DOCKER NATIVO NO WSL2 ###
 
 Atualização de pacotes do repositório Linux
-` sudo apt update -y
-sudo apt upgrade -y `
+```
+sudo apt update -y
+sudo apt upgrade -y
+```
 
 Instale alguns pacotes que deixam o apt usar pacotes pelo HTTPS
 > sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
