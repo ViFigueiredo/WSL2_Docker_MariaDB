@@ -1,8 +1,8 @@
 ### INSTALAR DOCKER NATIVO NO WSL2 ###
 
 Atualização de pacotes do repositório Linux
-> sudo apt update -y
-> sudo apt upgrade -y
+` sudo apt update -y
+sudo apt upgrade -y `
 
 Instale alguns pacotes que deixam o apt usar pacotes pelo HTTPS
 > sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
@@ -14,8 +14,8 @@ Adicione o repositório do Docker às fontes do APT
 > sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 
 Atualize o banco de dados do pacote com os pacotes do Docker que recém adicionamos e instale o Docker
-> sudo apt update
-> sudo apt install docker-ce -y
+` sudo apt update
+sudo apt install docker-ce -y `
 
 Verificando se está tudo ok
 > sudo service docker start
