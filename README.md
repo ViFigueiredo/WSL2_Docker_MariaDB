@@ -62,6 +62,8 @@ Utilizando o Docker sem SUDO
 ```
 sudo usermod -aG docker ${USER}
 su - ${USER}
+(Caso o comando acima não funcione, faça:
+sudo usermod -aG docker <SEU_USUARIO_LINUX>
 ```
 
 ### INSTALAR IMAGEM DOCKER DO MARIADB ###
